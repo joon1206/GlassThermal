@@ -1,0 +1,2 @@
+# Optional GPU execution only. CPU verification does not require this package.
+cupy-cuda12x[ctk]==14.2.0

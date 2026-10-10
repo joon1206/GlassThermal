@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.deps/
+results/*.csv
+results/*.json
+results/*.png
+results/smoke/
+results/gpu_smoke/
+validation/figures/
+validation/uq_10000_cpu_results.csv
+validation/uq_10000_cpu_results.csv.gz
+validation/uq_10000_cpu_results.csv.xz

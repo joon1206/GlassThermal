@@ -1,0 +1,42 @@
+{
+  "case": "official CLEAR_3.DAT; 3 panes; two 12.7 mm gaps; 90% Ar/10% air",
+  "pywincalc_version": "3.3.1",
+  "pywincalc_u_W_m2K": 1.6587582169481894,
+  "local_u_W_m2K": 1.6593933019846547,
+  "relative_difference": 0.00038286775611807115,
+  "pywincalc_layer_temperatures_K": [
+    257.7376628176114,
+    257.9348427243142,
+    272.3851000231513,
+    272.58227992985417,
+    285.5513174360271,
+    285.74849734272993
+  ],
+  "pywincalc_gap_effective_conductivities_W_mK": [
+    0.05685593879104189,
+    0.0633495696248683
+  ],
+  "local_interface_temperatures_K": [
+    285.7452806782595,
+    285.548025277666,
+    272.4833290996083,
+    272.28607369901476,
+    257.9359089516896,
+    257.7386535510961
+  ],
+  "local_gap_diagnostics": [
+    {
+      "h_gas": 1.383950449023005,
+      "h_radiation": 3.5695775852601983,
+      "nusselt": 1.0,
+      "rayleigh": 4205.089554362879
+    },
+    {
+      "h_gas": 1.4471697966186194,
+      "h_radiation": 3.0626278201275263,
+      "nusselt": 1.0871052970465724,
+      "rayleigh": 5801.612414522404
+    }
+  ],
+  "interpretation": "One component case; not ISO certification."
+}

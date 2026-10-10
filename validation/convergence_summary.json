@@ -1,0 +1,74 @@
+{
+  "mesh_rows": [
+    {
+      "length_m": 0.3,
+      "nx": 40,
+      "ny": 20,
+      "reference_heat_W_per_m": 12.316099161926399,
+      "defect_penalty_W_per_m": 0.061687925470806704,
+      "relative_penalty": 0.00500872270186869,
+      "energy_imbalance": 6.804793837802946e-13,
+      "ell_m": 0.01223741471962428,
+      "r2_log": 0.9845400150715273
+    },
+    {
+      "length_m": 0.3,
+      "nx": 80,
+      "ny": 40,
+      "reference_heat_W_per_m": 11.961622682988956,
+      "defect_penalty_W_per_m": 0.06239515878482749,
+      "relative_penalty": 0.005216278797488056,
+      "energy_imbalance": 3.301407337724116e-12,
+      "ell_m": 0.012350853129613553,
+      "r2_log": 0.9878411713172943
+    },
+    {
+      "length_m": 0.3,
+      "nx": 160,
+      "ny": 80,
+      "reference_heat_W_per_m": 11.96519704272043,
+      "defect_penalty_W_per_m": 0.06229308121557686,
+      "relative_penalty": 0.0052061893333779806,
+      "energy_imbalance": 6.190455438355314e-11,
+      "ell_m": 0.01225999457189363,
+      "r2_log": 0.9864145464831209
+    }
+  ],
+  "domain_rows": [
+    {
+      "length_m": 0.15,
+      "nx": 80,
+      "ny": 48,
+      "reference_heat_W_per_m": 6.669571281675919,
+      "defect_penalty_W_per_m": 0.06229268402509369,
+      "relative_penalty": 0.009339833310761301,
+      "energy_imbalance": 4.555634636994979e-12,
+      "ell_m": 0.012259025683953682,
+      "r2_log": 0.9863872630808843
+    },
+    {
+      "length_m": 0.3,
+      "nx": 160,
+      "ny": 48,
+      "reference_heat_W_per_m": 11.965143856607078,
+      "defect_penalty_W_per_m": 0.06229280256865266,
+      "relative_penalty": 0.005206189187124145,
+      "energy_imbalance": 4.0961865685073e-12,
+      "ell_m": 0.012260441703546478,
+      "r2_log": 0.9864300567914567
+    },
+    {
+      "length_m": 0.6,
+      "nx": 320,
+      "ny": 48,
+      "reference_heat_W_per_m": 22.55628850054144,
+      "defect_penalty_W_per_m": 0.062292802567085914,
+      "relative_penalty": 0.002761660127090086,
+      "energy_imbalance": 3.283965808513626e-12,
+      "ell_m": 0.012260441705128062,
+      "r2_log": 0.9864300567983145
+    }
+  ],
+  "finest_mesh_relative_change_from_medium": 0.0016386662412373905,
+  "domain_ell_relative_range": 0.00011549956560368834
+}
