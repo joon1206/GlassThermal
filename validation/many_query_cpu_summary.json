@@ -1,0 +1,193 @@
+{
+  "scientific_boundary": {
+    "construction": "low-e thin triple with two nominal 10 mm gaps and a generic edge spacer",
+    "distribution": "synthetic bounded correlated Gaussian-derived fields; not manufacturing tolerances",
+    "samples": 10000,
+    "seed": 20261008,
+    "correlation_length_m": 0.018,
+    "cross_gap_correlation": 0.35,
+    "amplitude_bound_range": [
+      0.05,
+      0.35
+    ]
+  },
+  "mesh": {
+    "nx": 120,
+    "ny": 36,
+    "unknowns": 4320
+  },
+  "timing": {
+    "topology_setup_seconds": 0.08409660001052544,
+    "ensemble_generation_seconds": 0.13395449999370612,
+    "preconditioner_setup_seconds": 0.012498099997173995,
+    "sensitivity_kernel_seconds": 5.377620399987791,
+    "production_cpu_wall_seconds": 25.78813890001038,
+    "production_cpu_worker_seconds": 25.665277899999637
+  },
+  "verification": {
+    "topology_max_relative_heat_error_vs_original": 6.72245725986756e-12,
+    "pcg_max_relative_heat_error_vs_direct": 8.871927861896132e-09,
+    "maximum_production_residual_relative_l2": 9.994582500072881e-10,
+    "maximum_production_iterations": 6,
+    "all_results_finite": true
+  },
+  "nominal_heat_W_per_m": 12.088287539825275,
+  "total_heat_W_per_m": {
+    "mean": 12.235828620029071,
+    "standard_deviation": 0.1795143166671429,
+    "quantiles": {
+      "p00": 12.088287539825295,
+      "p01": 12.088287539825295,
+      "p05": 12.088287539825295,
+      "p50": 12.167713622563934,
+      "p95": 12.605305372745292,
+      "p99": 12.830313840170279,
+      "p100": 13.170226208616109
+    }
+  },
+  "relative_heat_change": {
+    "mean": 0.012205292082746844,
+    "standard_deviation": 0.014850268582355195,
+    "quantiles": {
+      "p00": 1.5543122344752192e-15,
+      "p01": 1.5543122344752192e-15,
+      "p05": 1.5543122344752192e-15,
+      "p50": 0.006570499127935725,
+      "p95": 0.042770146823252184,
+      "p99": 0.06138390552841935,
+      "p100": 0.0895030553522449
+    }
+  },
+  "linear_surrogate_relative_error": {
+    "mean": -0.011850042638978039,
+    "standard_deviation": 0.014186873949083252,
+    "quantiles": {
+      "p00": -0.08215034812301603,
+      "p01": -0.05783383861070606,
+      "p05": -0.041015891106069804,
+      "p50": -0.006527609480130037,
+      "p95": 5.692335491858083e-12,
+      "p99": 1.3201855164624054e-11,
+      "p100": 3.111000346223136e-11
+    }
+  },
+  "exceedance_probability": {
+    "abs_heat_change_below_1e_8": 0.2447,
+    "abs_heat_change_gt_0_5_percent": 0.5431,
+    "abs_heat_change_gt_1_percent": 0.4161,
+    "abs_heat_change_gt_2_percent": 0.2426,
+    "abs_linear_error_gt_1_percent": 0.4137
+  },
+  "spearman_correlations_with_total_heat": {
+    "amplitude_bound": 0.9224307494085225,
+    "gap0_mean_width": -0.22523547204034333,
+    "gap1_mean_width": -0.20488887453664548
+  },
+  "pcg_iterations": {
+    "mean": 2.8619,
+    "standard_deviation": 1.858433148482005,
+    "quantiles": {
+      "p00": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "p50": 3.0,
+      "p95": 5.0,
+      "p99": 5.0,
+      "p100": 6.0
+    }
+  },
+  "performance": [
+    {
+      "stage": "legacy_scalar",
+      "method": "original_loop_assembly_direct",
+      "processes": 1,
+      "samples": 12,
+      "wall_seconds": 0.8610598999948706,
+      "samples_per_second": 13.936312677052415,
+      "speedup_vs_direct_1p": "",
+      "efficiency": ""
+    },
+    {
+      "stage": "topology_reuse",
+      "method": "fixed_csr_direct",
+      "processes": 1,
+      "samples": 12,
+      "wall_seconds": 0.1537432000041008,
+      "samples_per_second": 78.05223255194326,
+      "speedup_vs_direct_1p": "",
+      "efficiency": ""
+    },
+    {
+      "stage": "cpu_ensemble",
+      "method": "fixed_csr_direct",
+      "processes": 1,
+      "samples": 600,
+      "wall_seconds": 6.234499899990624,
+      "samples_per_second": 96.23867345011945,
+      "speedup_vs_direct_1p": 1.0,
+      "efficiency": 1.0
+    },
+    {
+      "stage": "cpu_ensemble",
+      "method": "fixed_csr_direct",
+      "processes": 2,
+      "samples": 600,
+      "wall_seconds": 10.144335899996804,
+      "samples_per_second": 59.14630646252447,
+      "speedup_vs_direct_1p": 0.614579402875706,
+      "efficiency": 0.307289701437853
+    },
+    {
+      "stage": "cpu_ensemble",
+      "method": "fixed_csr_direct",
+      "processes": 4,
+      "samples": 600,
+      "wall_seconds": 13.147554099996341,
+      "samples_per_second": 45.635864696701795,
+      "speedup_vs_direct_1p": 0.4741946564792883,
+      "efficiency": 0.11854866411982208
+    },
+    {
+      "stage": "cpu_ensemble",
+      "method": "fixed_csr_direct",
+      "processes": 6,
+      "samples": 600,
+      "wall_seconds": 18.03523390000919,
+      "samples_per_second": 33.26821283974001,
+      "speedup_vs_direct_1p": 0.34568444937037646,
+      "efficiency": 0.05761407489506274
+    },
+    {
+      "stage": "preconditioner_reuse",
+      "method": "nominal_factorization_pcg",
+      "processes": 1,
+      "samples": 600,
+      "wall_seconds": 1.3328839000023436,
+      "samples_per_second": 450.1517348952486,
+      "speedup_vs_direct_1p": 4.677451576975055,
+      "efficiency": ""
+    },
+    {
+      "stage": "production_cpu",
+      "method": "serial_nominal_factorization_pcg",
+      "processes": 1,
+      "samples": 10000,
+      "wall_seconds": 25.78813890001038,
+      "samples_per_second": 387.7751720965011,
+      "speedup_vs_direct_1p": "",
+      "efficiency": ""
+    }
+  ],
+  "software": {
+    "python": "3.14.0",
+    "numpy": "2.3.3",
+    "scipy": "1.16.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "acceptance": {
+    "at_least_10000_realizations": true,
+    "topology_matches_original_below_1e_10": true,
+    "pcg_matches_direct_below_1e_7": true,
+    "production_residual_below_1e_8": true
+  }
+}

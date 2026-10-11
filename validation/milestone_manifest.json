@@ -1,0 +1,50 @@
+{
+  "all_gates_passed": true,
+  "gates": {
+    "public_therm_edge": {
+      "file": "therm_spacer_benchmark.json",
+      "checks": {
+        "reference_error_below_2_percent": true,
+        "finest_mesh_change_below_1_percent": true
+      },
+      "passed": true
+    },
+    "low_e_thin_triple_pywincalc": {
+      "file": "pywincalc_low_e_thin_triple.json",
+      "checks": {
+        "thin_case_difference_below_2_percent": true,
+        "conventional_case_difference_below_2_percent": true
+      },
+      "passed": true
+    },
+    "severity_separation": {
+      "file": "severity_separation_summary.json",
+      "checks": {
+        "energy_imbalance_below_1e_9": true,
+        "defect_increment_mesh_change_below_1_percent": true,
+        "all_severities_and_separations_completed": true
+      },
+      "passed": true
+    },
+    "many_query_cpu": {
+      "file": "many_query_cpu_summary.json",
+      "checks": {
+        "at_least_10000_realizations": true,
+        "topology_matches_original_below_1e_10": true,
+        "pcg_matches_direct_below_1e_7": true,
+        "production_residual_below_1e_8": true
+      },
+      "passed": true
+    },
+    "batched_gpu": {
+      "file": "many_query_gpu_summary.json",
+      "checks": {
+        "all_10000_gpu_cases_completed": true,
+        "heat_error_below_1_5e_4": true,
+        "all_reported_observable_errors_below_2e_4": true,
+        "float32_residual_below_5e_4": true
+      },
+      "passed": true
+    }
+  }
+}

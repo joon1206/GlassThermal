@@ -1,0 +1,99 @@
+{
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 2080 Ti",
+    "compute_capability": "7.5",
+    "driver_version": 13010,
+    "runtime_version": 12090,
+    "memory_total_bytes": 11810701312,
+    "cupy_version": "14.2.0",
+    "dtype": "float32"
+  },
+  "samples": 10000,
+  "mesh": {
+    "nx": 120,
+    "ny": 36,
+    "unknowns": 4320
+  },
+  "batch_crossover": [
+    {
+      "batch_size": 1,
+      "cold_allocation_seconds": 0.2791841000143904,
+      "steady_state_seconds": 0.2717500999860931,
+      "samples_per_second": 3.679851451944913,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    },
+    {
+      "batch_size": 8,
+      "cold_allocation_seconds": 0.21356169998762198,
+      "steady_state_seconds": 0.21071730001131073,
+      "samples_per_second": 37.96555859234425,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    },
+    {
+      "batch_size": 32,
+      "cold_allocation_seconds": 0.2156031000195071,
+      "steady_state_seconds": 0.2154955999867525,
+      "samples_per_second": 148.49491127413825,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    },
+    {
+      "batch_size": 128,
+      "cold_allocation_seconds": 0.26830450000124983,
+      "steady_state_seconds": 0.20976180001161993,
+      "samples_per_second": 610.2159687460221,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    },
+    {
+      "batch_size": 512,
+      "cold_allocation_seconds": 0.26471240000682883,
+      "steady_state_seconds": 0.23432829999364913,
+      "samples_per_second": 2184.9686956883843,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    },
+    {
+      "batch_size": 1024,
+      "cold_allocation_seconds": 0.4384167999960482,
+      "steady_state_seconds": 0.40680510000674985,
+      "samples_per_second": 2517.1759154027554,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    },
+    {
+      "batch_size": 2048,
+      "cold_allocation_seconds": 0.7989025000133552,
+      "steady_state_seconds": 0.7697654999792576,
+      "samples_per_second": 2660.550518378891,
+      "max_relative_heat_error": 6.188232628922592e-05,
+      "max_iterations": 206
+    }
+  ],
+  "batch_crossover_probe_index": 6948,
+  "selected_batch_size": 2048,
+  "production_wall_seconds": 4.107574099994963,
+  "production_samples_per_second": 2434.5269875989,
+  "cpu_production_wall_seconds": 25.78813890001038,
+  "gpu_speedup_vs_cpu_production": 6.278192011202428,
+  "maximum_relative_error_vs_cpu": {
+    "total_heat_W_per_m": 0.00010112117299256284,
+    "edge_heat_fraction": 0.00012643758913635173,
+    "peak_heat_flux_W_m2": 0.00013009411899281577,
+    "minimum_indoor_surface_K": 5.56442050443434e-06
+  },
+  "maximum_gpu_residual_relative_l2": 0.00019768810307141393,
+  "iteration_quantiles": {
+    "p50": 162.0,
+    "p95": 204.0,
+    "maximum": 229
+  },
+  "acceptance": {
+    "all_10000_gpu_cases_completed": true,
+    "heat_error_below_1_5e_4": true,
+    "all_reported_observable_errors_below_2e_4": true,
+    "float32_residual_below_5e_4": true
+  }
+}

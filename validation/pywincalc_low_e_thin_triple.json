@@ -1,0 +1,72 @@
+{
+  "case": "low-e triple; surfaces 2 and 5 low-e; two 10 mm 90% Ar gaps",
+  "source": "LBNL-ETA/pyWinCalc public LOW-E_5.LOF and CLEAR_3.DAT products",
+  "source_url": "https://github.com/LBNL-ETA/pyWinCalc/tree/main/examples/products",
+  "pywincalc_version": "3.3.1",
+  "thin_center_case": {
+    "center_thickness_mm": 0.7,
+    "pywincalc_u_W_m2K": 1.0002856566172322,
+    "local_u_W_m2K": 0.999457967239413,
+    "relative_difference": -0.0008274530103913181,
+    "pywincalc_layer_temperatures_K_outside_to_inside": [
+      256.7104456234754,
+      256.894733045126,
+      273.51335146177485,
+      273.5406592601861,
+      288.8993373672071,
+      289.08361810284777
+    ],
+    "local_interface_temperatures_K_inside_to_outside": [
+      289.08781029580035,
+      288.9036585662038,
+      273.57310006276117,
+      273.5458148602555,
+      256.8933061584901,
+      256.7091544288935
+    ],
+    "pywincalc_gap_effective_conductivities_W_mK": [
+      0.023474358462140327,
+      0.02540006393366888
+    ],
+    "local_gap_effective_conductivities_W_mK_inside_to_outside": [
+      0.0254255973215749,
+      0.023407200332646858
+    ]
+  },
+  "conventional_center_case": {
+    "center_thickness_mm": 3.048,
+    "pywincalc_u_W_m2K": 0.9979126765540122,
+    "local_u_W_m2K": 0.997130065467066,
+    "relative_difference": -0.0007842480663225222,
+    "pywincalc_layer_temperatures_K_outside_to_inside": [
+      256.7067437746457,
+      256.89059401195254,
+      273.4728448432893,
+      273.5914687189187,
+      288.91179353069134,
+      289.09563709277836
+    ],
+    "local_interface_temperatures_K_inside_to_outside": [
+      289.09960096711484,
+      288.9158781571444,
+      273.6234630641616,
+      273.5049322190194,
+      256.88924571209907,
+      256.7055229021286
+    ],
+    "pywincalc_gap_effective_conductivities_W_mK": [
+      0.02347003115620752,
+      0.025403243627664267
+    ],
+    "local_gap_effective_conductivities_W_mK_inside_to_outside": [
+      0.02542964751922085,
+      0.023404433236639776
+    ]
+  },
+  "thin_center_u_change_vs_conventional_pywincalc": 0.0023779436006510224,
+  "acceptance": {
+    "thin_case_difference_below_2_percent": true,
+    "conventional_case_difference_below_2_percent": true
+  },
+  "interpretation": "Thermal-only component validation, not product certification."
+}

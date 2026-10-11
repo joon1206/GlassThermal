@@ -1,0 +1,51 @@
+{
+  "source": "LBNL-ETA/pyWinCalc examples/products/Spacer_CMA.thmx",
+  "source_url": "https://github.com/LBNL-ETA/pyWinCalc/blob/main/examples/products/Spacer_CMA.thmx",
+  "therm_version": "Version 8.0.13.0",
+  "therm_reference_u_W_m2K": 45.04496,
+  "therm_tagged_length_m": 0.011112488,
+  "rows": [
+    {
+      "refinement_level": 1,
+      "nodes": 139,
+      "triangles": 240,
+      "u_W_m2K": 49.41572653628639,
+      "relative_error": 0.097031200300464
+    },
+    {
+      "refinement_level": 2,
+      "nodes": 517,
+      "triangles": 960,
+      "u_W_m2K": 47.1160243840284,
+      "relative_error": 0.045977716131358454
+    },
+    {
+      "refinement_level": 3,
+      "nodes": 1993,
+      "triangles": 3840,
+      "u_W_m2K": 45.87627512700019,
+      "relative_error": 0.018455230662879667
+    },
+    {
+      "refinement_level": 4,
+      "nodes": 7825,
+      "triangles": 15360,
+      "u_W_m2K": 45.26965516764359,
+      "relative_error": 0.004988242139488822
+    },
+    {
+      "refinement_level": 5,
+      "nodes": 31009,
+      "triangles": 61440,
+      "u_W_m2K": 45.00121798951597,
+      "relative_error": -0.0009710744661340884
+    }
+  ],
+  "finest_absolute_relative_error": 0.0009710744661340884,
+  "finest_mesh_change": 0.005965109170826402,
+  "acceptance": {
+    "reference_error_below_2_percent": true,
+    "finest_mesh_change_below_1_percent": true
+  },
+  "interpretation": "Independent conforming linear-triangle FEM reproduction of a public THERM polygon case."
+}

@@ -68,4 +68,3 @@ severity/separation study, 10,000-case spatial campaign, and CPU/GPU crossover
 measurements are complete. See `docs/benchmark_results.md` and
 `docs/many_query_results.md` for results and limitations. The publication-style
 figure set is described in `docs/figures.md`.
-
